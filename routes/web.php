@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/' , 'PostController@index') -> name('home');
+Route::resource('posts', 'PostController');
+Route::post('/posts', 'PostController@store')->name('posts.store');
