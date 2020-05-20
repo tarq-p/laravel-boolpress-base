@@ -6,7 +6,7 @@
   <title></title>
 </head>
 <body>
-<form action="{{route('posts.store')}}" method="POST">
+<form action="{{route('posts.store')}}"method="POST">
   @csrf
   @method('POST')
     <div>
@@ -21,10 +21,10 @@
       <label for="title">Autore</label>
       <input type="text" placeholder="Autore" name="author">
     </div>
-    {{-- <div>
+    <div>
       <label for="title">Location</label>
       <input type="text" placeholder="Posizione" name="location">
-    </div> --}}
+    </div>
     <div>
       <label for="title">Immagine</label>
       <input type="text" placeholder="Inserisci path" name="img">

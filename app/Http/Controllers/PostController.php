@@ -25,11 +25,11 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
+
     public function published()
     {
         $posts = Post::where('published', true)->get();
-         dd($posts);
+         // dd($posts);
         return view('posts.index', compact('posts'));
     }
 
