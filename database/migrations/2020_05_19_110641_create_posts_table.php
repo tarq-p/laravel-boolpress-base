@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
 class CreatePostsTable extends Migration
 {
     /**
@@ -11,20 +9,19 @@ class CreatePostsTable extends Migration
      *
      * @return void
      */
-     public function up()
+    public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title', 150);
             $table->text('body');
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->string('author', 100);
+            $table->string('src')->default('https://picsum.photos/200/300');
             $table->boolean('published');
-            $table->text('img');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
