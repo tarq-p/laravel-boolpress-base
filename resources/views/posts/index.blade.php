@@ -1,3 +1,4 @@
+
 {{-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
 </html> --}}
 
 
-@foreach ($posts as $key => $post)
+{{-- @foreach ($posts as $key => $post)
   <div class="card" style="width: 18rem;">
     <img class="card-img" src="{{$post->src}}" alt="">
     <div class="card-body">
@@ -64,4 +65,4 @@
       </form>
     </div>
   </div>
-@endforeach
+@endforeach --}}

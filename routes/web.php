@@ -21,9 +21,9 @@ use Illuminate\Support\Facades\Route;
 // Route::post('/posts', 'PostController@store')->name('posts.store');
 
 
-Route::get('/', 'PostController@index')->name('posts.index');
-Route::resource('posts', 'PostController');
+// Route::get('/', 'PostController@index')->name('posts.index');
+// Route::resource('posts', 'PostController');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('index');
